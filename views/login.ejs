@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="/css/style1.css">
+
+
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div>
+      <h1>Login</h1>
+    </div>
+    <div>
+      <form action="/login" method="POST">
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required minlength="8">
+        </div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <a href="/register">Register</a>
+    <a href="/resetPassword">Forgot Password?</a>
+  </div>
+
+</body>
+
+</html>

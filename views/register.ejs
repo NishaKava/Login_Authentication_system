@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="/css/style1.css">
+  
+</head>
+<body>
+<div class="container">
+  <div>
+    <h1>Register</h1>
+  </div>
+  <form action="/register" method="POST">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required placeholder="Name">
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required placeholder="Email">
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required minlength="8" placeholder="Password">
+    </div>
+    <div>
+      <label for="confirm_password">Confirm Password</label>
+      <input type="password" id="confirm_password" name="confirm_password" required minlength="8">
+    </div>
+    <button type="submit">Register</button>
+  </form>
+  <a href="/login">Already have an account? Login</a>
+</div>
+</body>
+</html>
